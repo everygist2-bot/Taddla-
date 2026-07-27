@@ -22,7 +22,7 @@ import AdminDashboard from './AdminDashboard';
 import AdminAuthModal from './AdminAuthModal';
 import Footer from './Footer';
 import FooterModals from './FooterModals';
-import SEOHead from './SEOHead';
+import SEOHead  from './SEOHead';
 
 import { CATEGORIES } from './mockData';
 
