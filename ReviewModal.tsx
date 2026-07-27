@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { X, Star, Upload, Plus, Trash2, CheckCircle2 } from 'lucide-react';
-import { Product, Review } from '../types';
-import { submitReview } from '../services/api';
+import { Review } from './types';
+import { submitReview } from './api';
 
 interface ReviewModalProps {
   isOpen: boolean;
