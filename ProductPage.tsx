@@ -22,8 +22,8 @@ import {
   Calendar
 } from 'lucide-react';
 
-import { Product, Review, ProductQA, TimelineEntry } from '../types';
-import { voteHelpful, reportReview, askAIQuestion, getAISummary } from '../services/api';
+import { Product, Review, ProductQA, TimelineEntry } from './types';
+import { voteHelpful, reportReview, askAIQuestion, getAISummary } from './api';
 
 interface ProductPageProps {
   product: Product;
