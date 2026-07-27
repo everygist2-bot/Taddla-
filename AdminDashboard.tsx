@@ -35,8 +35,8 @@ import {
   X
 } from 'lucide-react';
 
-import { Product, Review, AdminReport, User, WhereToBuy } from '../types';
-import { fetchAdminStats, resolveAdminReport, updateProductAffiliateLinks } from '../services/api';
+import { Product, Review, AdminReport, User, WhereToBuy } from './types';
+import { fetchAdminStats, resolveAdminReport, updateProductAffiliateLinks } from './api';
 
 interface AdminDashboardProps {
   products: Product[];
