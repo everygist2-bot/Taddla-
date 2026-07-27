@@ -9,8 +9,13 @@ import { MOCK_PRODUCTS, MOCK_REVIEWS, MOCK_PRODUCT_QA, MOCK_ADMIN_REPORTS, MOCK_
 import { Product, Review, ProductQA, AdminReport, TimelineEntry } from './types.js';
 dotenv.config();
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const currentFilename = typeof import.meta !== 'undefined' && import.meta.url 
+  ? fileURLToPath(import.meta.url) 
+  : (typeof __filename !== 'undefined' ? __filename : '');
+
+const currentDirname = typeof import.meta !== 'undefined' && import.meta.url 
+  ? path.dirname(currentFilename) 
+  : (typeof __dirname !== 'undefined' ? __dirname : '');
 
 // In-memory data store seeded from mockData
 let products: Product[] = [...MOCK_PRODUCTS];
