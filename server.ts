@@ -5,9 +5,8 @@ import { createServer as createViteServer } from 'vite';
 import { GoogleGenAI, Type } from '@google/genai';
 import dotenv from 'dotenv';
 
-import { MOCK_PRODUCTS, MOCK_REVIEWS, MOCK_PRODUCT_QA, MOCK_ADMIN_REPORTS, MOCK_USERS } from './src/data/mockData.js';
-import { Product, Review, ProductQA, AdminReport, TimelineEntry } from './src/types.js';
-
+import { MOCK_PRODUCTS, MOCK_REVIEWS, MOCK_PRODUCT_QA, MOCK_ADMIN_REPORTS, MOCK_USERS } from './mockData.js';
+import { Product, Review, ProductQA, AdminReport, TimelineEntry } from './types.js';
 dotenv.config();
 
 const __filename = fileURLToPath(import.meta.url);
