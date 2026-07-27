@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { X, Sparkles, Upload, Image as ImageIcon, CheckCircle2, AlertCircle, ArrowRight } from 'lucide-react';
-import { CATEGORIES } from '../data/mockData';
-import { aiSuggestProduct, createProduct } from '../services/api';
-import { Product } from '../types';
+import { CATEGORIES } from './mockData';
+import { aiSuggestProduct, createProduct } from './api';
+import { Product } from './types';
 
 interface AddProductModalProps {
   isOpen: boolean;
