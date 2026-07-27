@@ -7,22 +7,22 @@ import {
   getAISummary
 } from './api';
 
-import Navbar from './Navbar';
-import HeroSection from './HeroSection';
-import TrendingProductsSection from './TrendingProductsSection';
-import LatestReviewsSection from './LatestReviewsSection';
-import ProductCard from './ProductCard';
-import ProductPage from './ProductPage';
-import AddProductModal from './AddProductModal';
-import ReviewModal from './ReviewModal';
-import TimelineUpdateModal from './TimelineUpdateModal';
-import AuthModal from './AuthModal';
-import UserProfileModal from './UserProfileModal';
-import AdminDashboard from './AdminDashboard';
-import AdminAuthModal from './AdminAuthModal';
-import Footer from './Footer';
-import FooterModals from './FooterModals';
-import { SEOHead }  from './SEOHead';
+import { Navbar } from './Navbar';
+import { HeroSection } from './HeroSection';
+import { TrendingProductsSection } from './TrendingProductsSection';
+import { LatestReviewsSection } from './LatestReviewsSection';
+import { ProductCard } from './ProductCard';
+import { ProductPage } from './ProductPage';
+import { AddProductModal } from './AddProductModal';
+import { ReviewModal } from './ReviewModal';
+import { TimelineUpdateModal } from './TimelineUpdateModal';
+import { AuthModal } from './AuthModal';
+import { UserProfileModal } from './UserProfileModal';
+import { AdminDashboard } from './AdminDashboard';
+import { AdminAuthModal } from './AdminAuthModal';
+import { Footer } from './Footer';
+import { FooterModals } from './FooterModals';
+import { SEOHead } from './SEOHead';
 
 import { CATEGORIES } from './mockData';
 
