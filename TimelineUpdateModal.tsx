@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { X, Clock, Star } from 'lucide-react';
-import { Review } from '../types';
-import { addTimelineMilestone } from '../services/api';
+import { Review } from './types';
+import { addTimelineMilestone } from './api';
 
 interface TimelineUpdateModalProps {
   isOpen: boolean;
