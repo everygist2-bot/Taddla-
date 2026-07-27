@@ -5,26 +5,27 @@ import {
   fetchReviews,
   fetchQAs,
   getAISummary
-} from './services/api';
+} from './api';
 
-import { Navbar } from './components/Navbar';
-import { HeroSection } from './components/HeroSection';
-import { TrendingProductsSection } from './components/TrendingProductsSection';
-import { LatestReviewsSection } from './components/LatestReviewsSection';
-import { ProductCard } from './components/ProductCard';
-import { ProductPage } from './components/ProductPage';
-import { AddProductModal } from './components/AddProductModal';
-import { ReviewModal } from './components/ReviewModal';
-import { TimelineUpdateModal } from './components/TimelineUpdateModal';
-import { AuthModal } from './components/AuthModal';
-import { UserProfileModal } from './components/UserProfileModal';
-import { AdminDashboard } from './components/AdminDashboard';
-import { AdminAuthModal } from './components/AdminAuthModal';
-import { Footer } from './components/Footer';
-import { FooterModals } from './components/FooterModals';
-import { SEOHead } from './components/SEOHead';
+import Navbar from './Navbar';
+import HeroSection from './HeroSection';
+import TrendingProductsSection from './TrendingProductsSection';
+import LatestReviewsSection from './LatestReviewsSection';
+import ProductCard from './ProductCard';
+import ProductPage from './ProductPage';
+import AddProductModal from './AddProductModal';
+import ReviewModal from './ReviewModal';
+import TimelineUpdateModal from './TimelineUpdateModal';
+import AuthModal from './AuthModal';
+import UserProfileModal from './UserProfileModal';
+import AdminDashboard from './AdminDashboard';
+import AdminAuthModal from './AdminAuthModal';
+import Footer from './Footer';
+import FooterModals from './FooterModals';
+import SEOHead from './SEOHead';
 
-import { CATEGORIES } from './data/mockData';
+import { CATEGORIES } from './mockData';
+
 import { Search, Filter, SlidersHorizontal, ArrowUpDown, Sparkles, Plus, AlertCircle, RefreshCw } from 'lucide-react';
 
 export default function App() {
