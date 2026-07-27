@@ -1,0 +1,75 @@
+{
+  "entities": {
+    "products": {
+      "title": "Products & Services",
+      "description": "Catalog of products and services on ReviewPulse",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "brand": { "type": "string" },
+        "category": { "type": "string" },
+        "itemType": { "type": "string" },
+        "description": { "type": "string" },
+        "imageUrl": { "type": "string" },
+        "avgRating": { "type": "number" },
+        "totalReviews": { "type": "number" },
+        "featured": { "type": "boolean" },
+        "trending": { "type": "boolean" }
+      },
+      "required": ["name", "brand", "category", "itemType"]
+    },
+    "reviews": {
+      "title": "Reviews",
+      "description": "Product reviews and long-term timelines",
+      "type": "object",
+      "properties": {
+        "productId": { "type": "string" },
+        "userId": { "type": "string" },
+        "userName": { "type": "string" },
+        "rating": { "type": "number" },
+        "title": { "type": "string" },
+        "content": { "type": "string" },
+        "helpfulCount": { "type": "number" },
+        "verifiedPurchase": { "type": "boolean" }
+      },
+      "required": ["productId", "rating", "title", "content"]
+    },
+    "qas": {
+      "title": "Questions & Answers",
+      "description": "Community and AI generated Q&A entries",
+      "type": "object",
+      "properties": {
+        "productId": { "type": "string" },
+        "question": { "type": "string" },
+        "answer": { "type": "string" },
+        "aiGenerated": { "type": "boolean" },
+        "votes": { "type": "number" }
+      },
+      "required": ["productId", "question"]
+    },
+    "reports": {
+      "title": "Admin Reports",
+      "description": "Flagged content requiring moderation",
+      "type": "object",
+      "properties": {
+        "reviewId": { "type": "string" },
+        "reason": { "type": "string" },
+        "reportedBy": { "type": "string" },
+        "status": { "type": "string" }
+      },
+      "required": ["reviewId", "reason"]
+    },
+    "users": {
+      "title": "Users",
+      "description": "User profiles and credentials metadata",
+      "type": "object",
+      "properties": {
+        "username": { "type": "string" },
+        "email": { "type": "string" },
+        "bio": { "type": "string" },
+        "level": { "type": "string" }
+      },
+      "required": ["username"]
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Taddla",
+  "description": "Global product and service review platform featuring AI review summaries, photo recognition, long-term experience timelines, authenticity scores, and community ratings.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
