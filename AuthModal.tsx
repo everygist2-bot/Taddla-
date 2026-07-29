@@ -152,7 +152,8 @@ export const AuthModal: React.FC<AuthModalProps> = ({
       onClose();
     } catch (err: any) {
       console.error('Auth error (email):', err?.code, err?.message, err);
-      setErrorMsg(friendlyAuthError(err));
+      setErrorMsg(err?.code || err?.message || friendlyAuthError(err));
+      
     } finally {
       setIsSubmitting(false);
     }
