@@ -9,7 +9,7 @@ import {
 } from 'lucide-react';
 import { signOut } from 'firebase/auth';
 import { auth } from './firebase'; // adjust this path to wherever you initialize Firebase Auth
-import { Review, Product } from '../types';
+import { Review, Product } from './types';
 
 /**
  * Badge shape used for earned achievements.
