@@ -8,7 +8,7 @@ import {
   MessageSquare,
 } from 'lucide-react';
 import { signOut } from 'firebase/auth';
-import { auth } from '../firebase'; // adjust this path to wherever you initialize Firebase Auth
+import { auth } from './firebase'; // adjust this path to wherever you initialize Firebase Auth
 import { Review, Product } from '../types';
 
 /**
