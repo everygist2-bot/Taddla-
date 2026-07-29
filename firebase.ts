@@ -1,28 +1,20 @@
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
 import { getAuth } from "firebase/auth";
-import { initializeFirestore } from "firebase/firestore";
+import { getFirestore } from "firebase/firestore";
 
-export const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
-  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
-  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
-  appId: import.meta.env.VITE_FIREBASE_APP_ID,
-  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
+const firebaseConfig = {
+  apiKey: "AIzaSyCzyo6MZ7chId7ZsNgx0UyVyFsNSc-sno0",
+  authDomain: "taddla-bb062.firebaseapp.com",
+  projectId: "taddla-bb062",
+  storageBucket: "taddla-bb062.firebasestorage.app",
+  messagingSenderId: "43114239608",
+  appId: "1:43114239608:web:1f87c47cf85b696dc2ff8d",
+  measurementId: "G-GB6T5DVG77"
 };
 
-// Initialize Firebase
-export const app = initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig);
 
-// Analytics (runs only in browser environment)
-export const analytics = typeof window !== "undefined" ? getAnalytics(app) : null;
-
-// Auth
 export const auth = getAuth(app);
+export const db = getFirestore(app);
+export default app;
 
-// Firestore with forced long-polling to prevent mobile connection drops
-export const db = initializeFirestore(app, {
-  experimentalForceLongPolling: true,
-});
