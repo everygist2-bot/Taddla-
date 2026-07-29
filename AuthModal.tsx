@@ -9,8 +9,8 @@ import {
   UserCredential
 } from 'firebase/auth';
 import { doc, getDoc, setDoc, serverTimestamp } from 'firebase/firestore';
-import { auth, db } from '../firebase';
-import { User } from '../types';
+import { auth, db } from './firebase';
+import { User } from './types';
 
 interface AuthModalProps {
   isOpen: boolean;
